@@ -5,10 +5,10 @@ GET http://localhost:3000 HTTP/1.1
 GET http://localhost:3000/another HTTP/1.1
 
 ###
-GET http://cse341-peace-6vnn.onrender.com HTTP/1.1
+GET https://cse341-peacewk01.onrender.com HTTP/1.1
 
 ###
-GET http://cse341-peace-6vnn.onrender.com/another HTTP/1.1
+GET https://cse341-peacewk01.onrender.com/another HTTP/1.1
 
 
 
