@@ -1,0 +1,39 @@
+GET http://localhost:3000 HTTP/1.1
+
+
+# ###
+# GET http://localhost:3000/another HTTP/1.1
+
+# ###
+# GET https://cse341-peacewk01.onrender.com HTTP/1.1
+
+# ###
+# GET https://cse341-peacewk01.onrender.com/another HTTP/1.1
+
+
+
+
+
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/64472e94dfb5719eeb9299eb
+###
+GET http://localhost:8080/contacts/64472ed9dfb5719eeb9299ec
+###
+GET http://localhost:8080/contacts/64472f62dfb5719eeb9299ed
+###
+GET http://localhost:8080/contacts/64472f8bdfb5719eeb9299ee
+
+// PRODUCTION Deploy
+###
+GET https://cse341-instructor.herokuapp.com/contacts
+###
+GET https://cse341-instructor.herokuapp.com/contacts/64472e94dfb5719eeb9299eb
+###
+GET https://cse341-instructor.herokuapp.com/contacts/64472ed9dfb5719eeb9299ec
+###
+GET https://cse341-instructor.herokuapp.com/contacts/64472f62dfb5719eeb9299ed
+###
+GET https://cse341-instructor.herokuapp.com/contacts/64472f8bdfb5719eeb9299ee

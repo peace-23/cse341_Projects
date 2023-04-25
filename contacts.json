@@ -1,0 +1,36 @@
+{
+    
+    "contact": 
+    {
+        "firstName": "Noah",
+        "lastName": " Jalloh",
+        "email": "noah456@gmail.com", 
+        "favoriteColor": "Blue",
+        "birthday": "05/06/84"
+    },
+
+    "contact2": {
+        "firstName": "Dorathy",
+        "lastName": "Smith",
+        "email": "dora105@yahoo.com", 
+        "favoriteColor": "Pink",
+        "birthday": "09/02/56"
+    },
+
+    "contact3": {
+        "firstName": "David",
+        "lastName": "Peacock",
+        "email": "pickme007@gmail.com", 
+        "favoriteColor": "Black",
+        "birthday": "01/03/81"
+    },
+
+    "contact4": {
+        "firstName": "Danny",
+        "lastName": "Grey",
+        "email": "dgdanny@gmail.com", 
+        "favoriteColor": "Orange",
+        "birthday": "07/01/98"
+    }
+    
+}
