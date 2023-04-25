@@ -1,7 +1,10 @@
 
 // LOCALHOST
+64473f9edfb5719eeb9299ef
 ###
 GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts/64473f9edfb5719eeb9299ef
 ###
 GET http://localhost:8080/contacts/64472e94dfb5719eeb9299eb
 ###
@@ -14,6 +17,8 @@ GET http://localhost:8080/contacts/64472f8bdfb5719eeb9299ee
 // PRODUCTION Deploy
 ###
 GET https://#/contacts
+###
+GET https://#/contacts/64473f9edfb5719eeb9299ef
 ###
 GET https://#/contacts/64472e94dfb5719eeb9299eb
 ###

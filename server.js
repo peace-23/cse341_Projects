@@ -1,18 +1,6 @@
-// // console.log("hello world");
-// var express = require("express");
-// var app = express();
-// const port = process.env.PORT || 3000
-
-
-// app.use("/", require("./routes"));
-
-// app.listen(3000, () => {
-//     console.log("Server is running on port ${port}");
-// });
-
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongodb = require('./db/connect');
+const mongodb = require('./dba/connect');
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -25,7 +13,7 @@ app
   })
   .use('/', require('./routes'));
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
