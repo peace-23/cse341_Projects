@@ -1,6 +1,5 @@
 // LOCALHOST
-
-###
+// GET all contacts
 GET http://localhost:8080/contacts HTTP/1.1
 
 ### Get contact by id 
@@ -22,7 +21,7 @@ content-type: application/json
         "birthday": "01/03/89"
     },
 
-### PUT contact 
+### Update contact 
 PUT http://localhost:8080/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1 
 content-type: application/json
 
@@ -46,25 +45,41 @@ content-type: application/json
     }
 
 // PRODUCTION Deploy
-### Get all contacts 
-GET #.com/contacts
+
+###
+GET https://cse341-peacel03.onrender.com/contacts HTTP/1.1
 
 ### Get contact by id 
-GET #.com/contacts/622023f642f9ab4cd6e060b3
+GET https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0c9 HTTP/1.1
+
+### Get contact by id 
+GET https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0cb HTTP/1.1
+
 
 ### Create contact 
-POST #.com/contacts HTTP/1.1 
+POST https://cse341-peacel03.onrender.com/contacts HTTP/1.1 
+content-type: application/json
+    {
+        "firstName": "Niyi",
+        "lastName": "Jeremy",
+        "email": "njpasser@gmail.com", 
+        "favoriteColor": "Brown",
+        "birthday": "01/03/89"
+    },
+
+### Update contact 
+PUT https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1 
 content-type: application/json
 
     {
-        "firstName": "David",
-        "lastName": "Peacock",
-        "email": "pickme007@gmail.com", 
-        "favoriteColor": "Black",
-        "birthday": "01/03/81"
-    },
-### PUT contact 
-PUT #.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 
+        "firstName": "Danny",
+        "lastName": "Grey",
+        "email": "dgdanny@gmail.com", 
+        "favoriteColor": "Grey",
+        "birthday": "07/01/98"
+    }
+### DELETE contact 
+DELETE https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1
 content-type: application/json
 
     {
@@ -74,6 +89,3 @@ content-type: application/json
         "favoriteColor": "Orange",
         "birthday": "07/01/98"
     }
-
-### DELETE contact 
-DELETE #.com/contacts/6220e34083149913680f9a64 HTTP/1.1
