@@ -29,11 +29,11 @@ content-type: application/json
         "firstName": "Danny",
         "lastName": "Grey",
         "email": "dgdanny@gmail.com", 
-        "favoriteColor": "red",
+        "favoriteColor": "Grey",
         "birthday": "07/01/98"
     }
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/644d0265c09d806c866be63a HTTP/1.1
+DELETE http://localhost:8080/contacts/644d0a4fb63d16f942321e60 HTTP/1.1
 
 
 
