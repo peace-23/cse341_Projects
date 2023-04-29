@@ -1,6 +1,5 @@
 {
     
-    "contact": 
     {
         "firstName": "Noah",
         "lastName": " Jalloh",
@@ -9,7 +8,7 @@
         "birthday": "05/06/84"
     },
 
-    "contact2": {
+    {
         "firstName": "Dorathy",
         "lastName": "Smith",
         "email": "dora105@yahoo.com", 
@@ -17,7 +16,7 @@
         "birthday": "09/02/56"
     },
 
-    "contact3": {
+    {
         "firstName": "David",
         "lastName": "Peacock",
         "email": "pickme007@gmail.com", 
@@ -25,7 +24,7 @@
         "birthday": "01/03/81"
     },
 
-    "contact4": {
+    {
         "firstName": "Danny",
         "lastName": "Grey",
         "email": "dgdanny@gmail.com", 

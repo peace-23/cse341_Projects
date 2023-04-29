@@ -1,29 +1,79 @@
-
 // LOCALHOST
 
 ###
-GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/64473f9edfb5719eeb9299ef
-###
-GET http://localhost:8080/contacts/64472e94dfb5719eeb9299eb
-###
-GET http://localhost:8080/contacts/64472ed9dfb5719eeb9299ec
-###
-GET http://localhost:8080/contacts/64472f62dfb5719eeb9299ed
-###
-GET http://localhost:8080/contacts/64472f8bdfb5719eeb9299ee
+GET http://localhost:8080/contacts HTTP/1.1
+
+### Get contact by id 
+GET http://localhost:8080/contacts/6449d9dfc34e81520e9ea0c9 HTTP/1.1
+
+### Get contact by id 
+GET http://localhost:8080/contacts/6449d9dfc34e81520e9ea0cb HTTP/1.1
+
+
+### Create contact 
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
+
+    {
+        "firstName": "Niyi",
+        "lastName": "Jeremy",
+        "email": "njpasser@gmail.com", 
+        "favoriteColor": "Brown",
+        "birthday": "01/03/89"
+    },
+
+### PUT contact 
+PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 
+content-type: application/json
+
+    {
+        "firstName": "Danny",
+        "lastName": "Grey",
+        "email": "dgdanny@gmail.com", 
+        "favoriteColor": "grey",
+        "birthday": "07/01/98"
+    }
+### DELETE contact 
+DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
+content-type: application/json
+
+    {
+        "firstName": "Danny",
+        "lastName": "Grey",
+        "email": "dgdanny@gmail.com", 
+        "favoriteColor": "Orange",
+        "birthday": "07/01/98"
+    }
 
 // PRODUCTION Deploy
-###
-GET https://https://cse341-peacel02.onrender.com/contacts
-###
-GET https://https://cse341-peacel02.onrender.com/contacts/64473f9edfb5719eeb9299ef
-###
-GET https://https://cse341-peacel02.onrender.com/contacts/64472e94dfb5719eeb9299eb
-###
-GET https://https://cse341-peacel02.onrender.com/contacts/64472ed9dfb5719eeb9299ec
-###
-GET https://https://cse341-peacel02.onrender.com/contacts/64472f62dfb5719eeb9299ed
-###
-GET https://https://cse341-peacel02.onrender.com/contacts/64472f8bdfb5719eeb9299ee
+### Get all contacts 
+GET #.com/contacts
+
+### Get contact by id 
+GET #.com/contacts/622023f642f9ab4cd6e060b3
+
+### Create contact 
+POST #.com/contacts HTTP/1.1 
+content-type: application/json
+
+    {
+        "firstName": "David",
+        "lastName": "Peacock",
+        "email": "pickme007@gmail.com", 
+        "favoriteColor": "Black",
+        "birthday": "01/03/81"
+    },
+### PUT contact 
+PUT #.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 
+content-type: application/json
+
+    {
+        "firstName": "Danny",
+        "lastName": "Grey",
+        "email": "dgdanny@gmail.com", 
+        "favoriteColor": "Orange",
+        "birthday": "07/01/98"
+    }
+
+### DELETE contact 
+DELETE #.com/contacts/6220e34083149913680f9a64 HTTP/1.1
