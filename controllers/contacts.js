@@ -31,17 +31,23 @@ const createContact = async (req, res) => {
     birthday: req.body.birthday
   };
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
-  if (response) {
-    res.setHeader('Content-Type', 'application/json');
-    res.status(201).json({
-      message: 'Successfully added a Contact',
-      createContact: response
-    });
+
+  if (response.acknowledged) {
+    res.status(201).json(response);
   } else {
-    res.status(500).json({
-      message: 'Some error occured while creating new contact'
-    });
+    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
+  // if (response) {
+  //   res.setHeader('Content-Type', 'application/json');
+  //   res.status(201).json({
+  //     message: 'Successfully added a Contact',
+  //     createContact: response
+  //   });
+  // } else {
+  //   res.status(500).json({
+  //     message: 'Some error occured while creating new contact'
+  //   });
+  // }
 };
 
 const updateContact = async (req, res) => {
