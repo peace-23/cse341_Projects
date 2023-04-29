@@ -1,9 +1,15 @@
-const routes = require("express").Router();
+const routes = require('express').Router();
+const temple = require('./temple');
 
-
-const myController = require("../controllers");
-
-routes.get("/", myController.myNameFunction);
-routes.get("/another", myController.anotherNameFunction);
+routes.use('/temples', temple);
+routes.use(
+  '/',
+  (docData = (req, res) => {
+    let docData = {
+      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
+    };
+    res.send(docData);
+  })
+);
 
 module.exports = routes;
