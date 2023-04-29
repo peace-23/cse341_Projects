@@ -19,7 +19,7 @@ content-type: application/json
         "email": "njpasser@gmail.com", 
         "favoriteColor": "Brown",
         "birthday": "01/03/89"
-    },
+    }
 
 ### Update contact 
 PUT http://localhost:8080/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1 
