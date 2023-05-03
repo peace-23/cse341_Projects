@@ -32,7 +32,7 @@ content-type: application/json
         "favoriteColor": "Grey",
         "birthday": "07/01/98"
     }
-    
+
 ### DELETE contact 
 DELETE http://localhost:8080/contacts/644d0a4fb63d16f942321e60 HTTP/1.1
 
@@ -42,17 +42,17 @@ DELETE http://localhost:8080/contacts/644d0a4fb63d16f942321e60 HTTP/1.1
 // PRODUCTION Deploy
 
 ###
-GET https://cse341-peacel03.onrender.com/contacts HTTP/1.1
+GET https://cse341-l04.onrender.com/contacts HTTP/1.1
 
 ### Get contact by id 
-GET https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0c9 HTTP/1.1
+GET https://cse341-l04.onrender.com/contacts/6449d9dfc34e81520e9ea0c9 HTTP/1.1
 
 ### Get contact by id 
-GET https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0cb HTTP/1.1
+GET https://cse341-l04.onrender.com/contacts/6449d9dfc34e81520e9ea0cb HTTP/1.1
 
 
 ### Create contact 
-POST https://cse341-peacel03.onrender.com/contacts HTTP/1.1
+POST https://cse341-l04.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
     {
@@ -64,7 +64,7 @@ content-type: application/json
     }
 
 ### Update contact 
-PUT https://cse341-peacel03.onrender.com/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1
+PUT https://cse341-l04.onrender.com/contacts/6449d9dfc34e81520e9ea0cc HTTP/1.1
 content-type: application/json
 
     {
@@ -76,4 +76,4 @@ content-type: application/json
     }
 
 ### DELETE contact 
-DELETE https://cse341-peacel03.onrender.com/contacts/644c84775c0403a65827b48d HTTP/1.1
+DELETE https://cse341-l04.onrender.com/contacts/6451cc847f9417bbe5a1fce0 HTTP/1.1
