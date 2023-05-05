@@ -29,7 +29,7 @@ content-type: application/json
         "firstName": "Danny",
         "lastName": "Grey",
         "email": "dgdanny@gmail.com", 
-        "favoriteColor": "Grey",
+        "favoriteColor": "Red",
         "birthday": "07/01/98"
     }
 
