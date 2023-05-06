@@ -1,15 +1,12 @@
-const routes = require('express').Router();
-const temple = require('./temple');
+const router = require('express').Router();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
 
-routes.use('/temples', temple);
-routes.use(
-  '/',
-  (docData = (req, res) => {
-    let docData = {
-      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
-    };
-    res.send(docData);
-  })
-);
+router.use('/api-docs', swaggerUi.serve);
+router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
-module.exports = routes;
+router.use('/students', require('./students'));
+router.use('/courses', require('./courses'));
+
+
+module.exports = router;
