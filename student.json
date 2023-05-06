@@ -1,54 +1,123 @@
-{
-    "name": "students",
-    "schema": {
-       "studentId": {
-          "type": "number",
-          "required": true
-       },
-       "firstName": {
-          "type": "string",
-          "required": true
-       },
-       "lastName": {
-          "type": "string",
-          "required": true
-       },
-       "email": {
-          "type": "string",
-          "required": true
-       },
-       "dob": {
-          "type": "date",
-          "required": true
-       },
-       "major": {
-          "type": "string",
-          "required": true
-       },
-       "courses": {
-          "type": "array",
-          "items": {
-             "type": "object",
-             "properties": {
-                "courseId": {
-                   "type": "number",
-                   "required": true
-                },
-                "courseName": {
-                   "type": "string",
-                   "required": true
-                },
-                "instructor": {
-                   "type": "string",
-                   "required": true
-                },
-                "credits": {
-                   "type": "number",
-                   "required": true
-                }
-             }
-          }
-       }
+
+[
+    {
+        "firstName": "Emily",
+        "lastName": "Garcia",
+        "sex": "F",
+        "dob": "2002-03-15",
+        "email": "emilygarcia@student.com",
+        "classification": "Sophomore",
+        "track": "On-campus",
+        "major": "Computer Science",
+        "enrolledDate": "2021-09-01",
+        "plannedGrad": "2025-05-01"
+    },
+    {
+        "firstName": "Jacob",
+        "lastName": "Nguyen",
+        "sex": "M",
+        "dob": "2001-07-23",
+        "email": "jacobnguyen@student.com",
+        "classification": "Junior",
+        "track": "Online",
+        "major": "Information Systems",
+        "enrolledDate": "2020-09-01",
+        "plannedGrad": "2024-05-01"
+    },
+    {
+        "firstName": "Avery",
+        "lastName": "Wong",
+        "sex": "F",
+        "dob": "2003-02-12",
+        "email": "averywong@student.com",
+        "classification": "Freshman",
+        "track": "On-campus",
+        "major": "Business Administration",
+        "enrolledDate": "2022-09-01",
+        "plannedGrad": "2026-05-01"
+    },
+    {
+        "firstName": "Ethan",
+        "lastName": "Kim",
+        "sex": "M",
+        "dob": "2002-11-18",
+        "email": "ethankim@student.com",
+        "classification": "Sophomore",
+        "track": "On-campus",
+        "major": "Political Science",
+        "enrolledDate": "2021-09-01",
+        "plannedGrad": "2025-05-01"
+    },
+    {
+        "firstName": "Sophia",
+        "lastName": "Lee",
+        "sex": "F",
+        "dob": "2003-04-05",
+        "email": "sophialee@student.com",
+        "classification": "Freshman",
+        "track": "Online",
+        "major": "Psychology",
+        "enrolledDate": "2022-09-01",
+        "plannedGrad": "2026-05-01"
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Gonzalez",
+        "sex": "M",
+        "dob": "2001-12-01",
+        "email": "danielgonzalez@student.com",
+        "classification": "Senior",
+        "track": "On-campus",
+        "major": "Mechanical Engineering",
+        "enrolledDate": "2018-09-01",
+        "plannedGrad": "2022-05-01"
+    },
+    {
+        "firstName": "Isabella",
+        "lastName": "Martinez",
+        "sex": "F",
+        "dob": "2002-08-09",
+        "email": "isabellamartinez@student.com",
+        "classification": "Junior",
+        "track": "Online",
+        "major": "Art History",
+        "enrolledDate": "2020-09-01",
+        "plannedGrad": "2024-05-01"
+    },
+    {
+        "firstName": "Eva",
+        "lastName": "Nguyen",
+        "sex": "F",
+        "dob": "2000-04-15",
+        "email": "evanguyen@student.com",
+        "classification": "Senior",
+        "track": "On-campus",
+        "major": "Computer Science",
+        "enrolledDate": "2017-09-01",
+        "plannedGrad": "2021-05-01"
+    },
+    {
+        "firstName": "Olivia",
+        "lastName": "Lopez",
+        "sex": "F",
+        "dob": "2001-11-03",
+        "email": "olivialopez@student.com",
+        "classification": "Junior",
+        "track": "On-campus",
+        "major": "Biology",
+        "enrolledDate": "2020-09-01",
+        "plannedGrad": "2024-05-01"
+    },
+    {
+        "firstName": "Alexander",
+        "lastName": "Gao",
+        "sex": "M",
+        "dob": "2002-05-10",
+        "email": "alexandergao@student.com",
+        "classification": "Sophomore",
+        "track": "Online",
+        "major": "Data Science",
+        "enrolledDate": "2021-09-01",
+        "plannedGrad": "2025-05-01"
     }
- }
- 
+]
