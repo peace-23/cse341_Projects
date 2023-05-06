@@ -1,54 +1,53 @@
-{
-    "name": "courses",
-    "schema": {
-       "courseId": {
-          "type": "number",
-          "required": true
-       },
-       "courseName": {
-          "type": "string",
-          "required": true
-       },
-       "description": {
-          "type": "string",
-          "required": true
-       },
-       "instructor": {
-          "type": "string",
-          "required": true
-       },
-       "credits": {
-          "type": "number",
-          "required": true
-       },
-       "startDate": {
-          "type": "date",
-          "required": true
-       },
-       "students": {
-          "type": "array",
-          "items": {
-             "type": "object",
-             "properties": {
-                "studentId": {
-                   "type": "number",
-                   "required": true
-                },
-                "firstName": {
-                   "type": "string",
-                   "required": true
-                },
-                "lastName": {
-                   "type": "string",
-                   "required": true
-                },
-                "email": {
-                   "type": "string",
-                   "required": true
-                }
-             }
-          }
-       }
+[
+    {
+        "courseId": 1,
+        "courseName": "Introduction to Computer Science",
+        "description": "An introductory course to computer science concepts and programming.",
+        "instructor": "Dr. Jane Smith",
+        "credits": 3,
+        "startDate": "2023-09-01",
+        "students": [
+            {
+                "studentId": 123,
+                "firstName": "John",
+                "lastName": "Doe",
+                "email": "johndoe@example.com"
+            },
+            {
+                "studentId": 456,
+                "firstName": "Jane",
+                "lastName": "Doe",
+                "email": "janedoe@example.com"
+            }
+        ]
+    },
+    {
+        "courseId": 2,
+        "courseName": "Data Structures and Algorithms",
+        "description": "A course covering advanced data structures and algorithms.",
+        "instructor": "Dr. Robert Johnson",
+        "credits": 4,
+        "startDate": "2023-09-01",
+        "students": [
+            {
+                "studentId": 789,
+                "firstName": "Bob",
+                "lastName": "Smith",
+                "email": "bobsmith@example.com"
+            },
+            {
+                "studentId": 101,
+                "firstName": "Alice",
+                "lastName": "Johnson",
+                "email": "alicejohnson@example.com"
+            },
+            {
+                "studentId": 102,
+                "firstName": "Charlie",
+                "lastName": "Davis",
+                "email": "charliedavis@example.com"
+            }
+        ]
     }
- }
- 
+]
+
