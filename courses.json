@@ -1,0 +1,54 @@
+{
+    "name": "courses",
+    "schema": {
+       "courseId": {
+          "type": "number",
+          "required": true
+       },
+       "courseName": {
+          "type": "string",
+          "required": true
+       },
+       "description": {
+          "type": "string",
+          "required": true
+       },
+       "instructor": {
+          "type": "string",
+          "required": true
+       },
+       "credits": {
+          "type": "number",
+          "required": true
+       },
+       "startDate": {
+          "type": "date",
+          "required": true
+       },
+       "students": {
+          "type": "array",
+          "items": {
+             "type": "object",
+             "properties": {
+                "studentId": {
+                   "type": "number",
+                   "required": true
+                },
+                "firstName": {
+                   "type": "string",
+                   "required": true
+                },
+                "lastName": {
+                   "type": "string",
+                   "required": true
+                },
+                "email": {
+                   "type": "string",
+                   "required": true
+                }
+             }
+          }
+       }
+    }
+ }
+ 
