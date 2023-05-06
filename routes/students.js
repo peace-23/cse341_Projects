@@ -3,7 +3,7 @@ const router = require('express').Router();
 const controller = require('../controllers/students');
 
 router.get('/', controller.allStudents);
-router.get('/:id', controller.singlestudent);
+router.get('/:id', controller.singleStudent);
 
 router.post('/', controller.newStudent);
 router.put('/:id', controller.updateStudent);

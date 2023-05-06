@@ -110,3 +110,49 @@ const deleteStudent = async (req, res) => {
 
 
 module.exports = { allStudents, singleStudent, newStudent, updateStudent, deleteStudent };
+
+
+
+
+
+
+
+
+// const db = require('../models');
+// const Student = db.students;
+
+// // // Create a Temple
+
+// //     firstName: req.body.firstNam,
+// //     lastName: req.body.lastName,
+// //     sex: req.body.sex,
+// //     dob: req.body.dob,
+// //     email: req.body.email,
+// //     classification: req.body.classification,
+// //     track: req.body.track,
+// //     major: req.body.major,
+// //     enrolledDate: req.body.enrolledDate,
+// //     plannedGrad: req.body.plannedGrad
+// // });
+
+// // Find a single Temple with an id
+// exports.findOne = (req, res) => {
+//     const student = req.params.student;
+//     Student.find({ student: student })
+//         .then((data) => {
+//             if (!data)
+//                 res
+//                     .status(404)
+//                     .send({ message: 'Not found Student with name ' + student });
+//             else res.send(data[0]);
+//         })
+//         .catch((err) => {
+//             res.status(500).send({
+//                 message: 'Error retrieving Student with name=' + student,
+//                 error: err
+//             });
+//         });
+
+// };
+
+
