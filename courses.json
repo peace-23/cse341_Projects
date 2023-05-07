@@ -1,0 +1,92 @@
+[
+    {
+        "courseCode": "MATH101",
+        "courseName": "Calculus I",
+        "creditHours": 4,
+        "instructor": "Dr. Smith",
+        "schedule": "MWF 9:00-10:00AM",
+        "location": "Building A, Room 101",
+        "department": "Mathematics"
+    },
+    {
+        "courseCode": "HIST202",
+        "courseName": "World History",
+        "creditHours": 3,
+        "instructor": "Dr. Johnson",
+        "schedule": "TTH 11:00AM-12:15PM",
+        "location": "Building B, Room 201",
+        "department": "History"
+    },
+    {
+        "courseCode": "PHYS101",
+        "courseName": "Introductory Physics",
+        "creditHours": 4,
+        "instructor": "Dr. Lee",
+        "schedule": "MWF 1:00-2:00PM",
+        "location": "Building C, Room 301",
+        "department": "Physics"
+    },
+    {
+        "courseCode": "CHEM201",
+        "courseName": "Organic Chemistry",
+        "creditHours": 5,
+        "instructor": "Dr. Wilson",
+        "schedule": "TTH 9:30-10:45AM",
+        "location": "Building D, Room 401",
+        "department": "Chemistry"
+    },
+    {
+        "courseCode": "CSCI301",
+        "courseName": "Algorithms",
+        "creditHours": 4,
+        "instructor": "Dr. Kim",
+        "schedule": "MWF 10:00-11:00AM",
+        "location": "Building A, Room 201",
+        "department": "Computer Science"
+    },
+    {
+        "courseCode": "BUSI401",
+        "courseName": "Financial Management",
+        "creditHours": 3,
+        "instructor": "Dr. Davis",
+        "schedule": "TTH 2:00-3:15PM",
+        "location": "Building B, Room 301",
+        "department": "Business"
+    },
+    {
+        "courseCode": "ENGL201",
+        "courseName": "Composition II",
+        "creditHours": 3,
+        "instructor": "Dr. Brown",
+        "schedule": "MWF 11:00AM-12:00PM",
+        "location": "Building C, Room 101",
+        "department": "English"
+    },
+    {
+        "courseCode": "PSYC101",
+        "courseName": "Introduction to Psychology",
+        "creditHours": 3,
+        "instructor": "Dr. Hernandez",
+        "schedule": "MWF 2:00-3:00PM",
+        "location": "Building D, Room 201",
+        "department": "Psychology"
+    },
+    {
+        "courseCode": "ARTS205",
+        "courseName": "Art History",
+        "creditHours": 3,
+        "instructor": "Dr. Taylor",
+        "schedule": "TTH 12:30-1:45PM",
+        "location": "Building A, Room 401",
+        "department": "Art"
+    },
+    {
+        "courseCode": "BIOL301",
+        "courseName": "Genetics",
+        "creditHours": 4,
+        "instructor": "Dr. Garcia",
+        "schedule": "TTH 3:30-4:45PM",
+        "location": "Building B, Room 101",
+        "department": "Biology"
+    }
+]
