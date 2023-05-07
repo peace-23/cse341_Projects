@@ -15,6 +15,9 @@ const allCourses = async (req, res) => {
 };
 
 const singleCourse = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json("You need a valid course id to find any course.");
+    }
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db().collection('courses').find({ _id: userId });
     result.toArray((err, result) => {
@@ -45,12 +48,15 @@ const newCourse = async (req, res) => {
         });
     } else {
         res.status(500).json({
-            message: 'An error occured while creating new course'
+            message: 'Some error occured while creating a new course'
         });
     }
 };
 
 const updateCourse = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json("You need a valid course id to update this course.");
+    }
     const userId = new ObjectId({ id: req.params.id });
     const course = {
         courseCode: req.body.courseCode,
@@ -62,7 +68,6 @@ const updateCourse = async (req, res) => {
         department: req.body.department
     };
 
-    // ObjectId.updateOne({ id: req.params.id}, book-series)
     const result = await mongodb
         .getDb()
         .db()
@@ -80,16 +85,19 @@ const updateCourse = async (req, res) => {
 };
 
 const deleteCourse = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json("You need a valid course id to delete a course.");
+    }
     const userId = new ObjectId({ id: req.params.id });
-    const course = {
-        courseCode: req.body.courseCode,
-        courseName: req.body.courseName,
-        creditHours: req.body.creditHours,
-        instructor: req.body.instructor,
-        schedule: req.body.schedule,
-        location: req.body.location,
-        department: req.body.department
-    };
+    // const course = {
+        // courseCode: req.body.courseCode,
+        // courseName: req.body.courseName,
+        // creditHours: req.body.creditHours,
+        // instructor: req.body.instructor,
+        // schedule: req.body.schedule,
+        // location: req.body.location,
+        // department: req.body.department
+    // };
     const result = await mongodb
         .getDb()
         .db()
