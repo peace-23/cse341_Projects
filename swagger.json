@@ -239,13 +239,57 @@
       },
       "post": {
         "description": "",
-        "parameters": [],
-        "responses": {}
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "courseCode": {
+                  "example": "any"
+                },
+                "courseName": {
+                  "example": "any"
+                },
+                "creditHours": {
+                  "example": "any"
+                },
+                "instructor": {
+                  "example": "any"
+                },
+                "schedule": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
     "/courses/{id}": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -254,7 +298,11 @@
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       },
       "put": {
         "description": "",
@@ -264,9 +312,46 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "courseCode": {
+                  "example": "any"
+                },
+                "courseName": {
+                  "example": "any"
+                },
+                "creditHours": {
+                  "example": "any"
+                },
+                "instructor": {
+                  "example": "any"
+                },
+                "schedule": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
-        "responses": {}
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       },
       "delete": {
         "description": "",
@@ -276,9 +361,46 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "courseCode": {
+                  "example": "any"
+                },
+                "courseName": {
+                  "example": "any"
+                },
+                "creditHours": {
+                  "example": "any"
+                },
+                "instructor": {
+                  "example": "any"
+                },
+                "schedule": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     }
   }
