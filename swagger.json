@@ -35,9 +35,59 @@
         }
       },
       "post": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
-        "parameters": [],
-        "responses": {}
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "sex": {
+                  "example": "any"
+                },
+                "dob": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "classification": {
+                  "example": "any"
+                },
+                "track": {
+                  "example": "any"
+                },
+                "major": {
+                  "example": "any"
+                },
+                "enrolledDate": {
+                  "example": "any"
+                },
+                "plannedGrad": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     },
     "/students/{id}": {
