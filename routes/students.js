@@ -1,9 +1,10 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
 
 const controller = require('../controllers/students');
 
-router.get('/', controller.allStudents);
-router.get('/:id', controller.singleStudent);
+router.get('/', controller.getAll);
+router.get('/:id', controller.getSingle);
 
 router.post('/', controller.newStudent);
 router.put('/:id', controller.updateStudent);
