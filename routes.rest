@@ -48,7 +48,7 @@ DELETE http://localhost:8080/students/6456a8e7eb25d2960a8111d0 HTTP/1.1
 
 // LOCALHOST Courses Collection
 ### Get Course list
-GET http://localhost:8080 HTTP/1.1
+GET http://localhost:8080/courses HTTP/1.1
 
 ### Get Course by Id
 GET http://localhost:8080/courses/6456693d97f91a1265252132 HTTP/1.1
