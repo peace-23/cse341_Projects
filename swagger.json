@@ -20,6 +20,9 @@
     },
     "/students/": {
       "get": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -32,6 +35,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -43,7 +49,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstNam": {
+                "firstName": {
                   "example": "any"
                 },
                 "lastName": {
@@ -89,6 +95,9 @@
     },
     "/students/{id}": {
       "get": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -108,6 +117,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "parameters": [
           {
@@ -166,6 +178,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "parameters": [
           {
