@@ -9,7 +9,8 @@ const app = express();
 
 app
     // .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
-    .use(bodyParser.json())
+    .use('/', require('./routes'))
+    .use('/', bodyParser.json())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
