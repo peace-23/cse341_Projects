@@ -241,6 +241,9 @@
     },
     "/courses/": {
       "get": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -253,6 +256,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -301,6 +307,9 @@
     },
     "/courses/{id}": {
       "get": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -320,6 +329,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "parameters": [
           {
@@ -369,6 +381,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "parameters": [
           {

@@ -4,6 +4,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 
 const allCourses = async (req, res) => {
+        //#swagger.tags=['Courses']
     const result = await mongodb.getDb().db().collection('courses').find();
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
@@ -12,6 +13,7 @@ const allCourses = async (req, res) => {
 };
 
 const singleCourse = async (req, res) => {
+        //#swagger.tags=['Courses']
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db().collection('courses').find({ _id: userId });
     result.toArray().then((lists) => {
@@ -21,6 +23,7 @@ const singleCourse = async (req, res) => {
 };
 
 const newCourse = async (req, res) => {
+        //#swagger.tags=['Courses']
     const course = {
         courseCode: req.body.courseCode,
         courseName: req.body.courseName,
@@ -45,7 +48,8 @@ const newCourse = async (req, res) => {
 };
 
 const updateCourse = async (req, res) => {
-    const userId = new ObjectId({ id: req.params.id });
+        //#swagger.tags=['Courses']
+        const userId = new ObjectId({ id: req.params.id });
     const course = {
         courseCode: req.body.courseCode,
         courseName: req.body.courseName,
@@ -56,7 +60,6 @@ const updateCourse = async (req, res) => {
         department: req.body.department
     };
 
-    // ObjectId.updateOne({ id: req.params.id}, book-series)
     const result = await mongodb
         .getDb()
         .db()
@@ -74,6 +77,8 @@ const updateCourse = async (req, res) => {
 };
 
 const deleteCourse = async (req, res) => {
+        //#swagger.tags=['Courses']
+
     const userId = new ObjectId({ id: req.params.id });
     const course = {
         courseCode: req.body.courseCode,
