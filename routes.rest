@@ -59,13 +59,13 @@ POST http://localhost:8080/courses HTTP/1.1
 Content-Type: application/json
 
 {
-  "courseCode": "MATH201",
-  "courseName": "Linear Algebra",
-  "creditHours": 4,
-  "instructor": "Dr. Kim",
+  "courseCode": "ENG201",
+  "courseName": "Adv English",
+  "creditHours": 2,
+  "instructor": "Dr. Red",
   "schedule": "TTh 10:00-11:30AM",
-  "location": "Classroom A",
-  "department": "Mathematics"
+  "location": "Classroom E",
+  "department": "English"
 }
 
 ### Update Course
