@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app
-.use('/', bodyParser.json())
+  .use('/', bodyParser.json())
   .use('/', require('./routes'))
 
   .use((req, res, next) => {
