@@ -27,6 +27,7 @@ const getSingle = async (req, res) => {
 
 const createStudent = async (req, res) => {
     //#swagger.tags=['Students']
+    console.log(req.body)
     const student = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,

@@ -9,8 +9,9 @@ const port = process.env.PORT || 8080;
 const app = express();
 
 app
+.use('/', bodyParser.json())
   .use('/', require('./routes'))
-  .use('/', bodyParser.json())
+
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -20,8 +21,7 @@ app
     next();
   })
   .use(cors({ methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'] }))
-  .use(cors({ origin: '*' }))
-  .use('/', require('./routes'));
+  .use(cors({ origin: '*' }));
 
 mongodb.initDb((err) => {
   if (err) {
