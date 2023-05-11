@@ -3,7 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 
 
-const allCourses = async (req, res) => {
+const getall = async (req, res) => {
         //#swagger.tags=['Courses']
     const result = await mongodb.getDb().db().collection('courses').find();
     result.toArray().then((lists) => {
@@ -12,7 +12,7 @@ const allCourses = async (req, res) => {
     });
 };
 
-const singleCourse = async (req, res) => {
+const getSingle = async (req, res) => {
         //#swagger.tags=['Courses']
     const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDb().db().collection('courses').find({ _id: userId });
@@ -22,7 +22,7 @@ const singleCourse = async (req, res) => {
     });
 };
 
-const newCourse = async (req, res) => {
+const createCourse = async (req, res) => {
         //#swagger.tags=['Courses']
     const course = {
         courseCode: req.body.courseCode,
@@ -106,6 +106,6 @@ const deleteCourse = async (req, res) => {
 };
 
 
-module.exports = { allCourses, singleCourse, newCourse, updateCourse, deleteCourse };
+module.exports = { getall, getSingle, createCourse, updateCourse, deleteCourse };
 
 
