@@ -20,6 +20,9 @@
     },
     "/students/": {
       "get": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -28,17 +31,14 @@
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
           }
         }
       },
       "post": {
-        "description": "",
-        "produces": [
-          "application/json"
+        "tags": [
+          "Students"
         ],
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -46,7 +46,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstNam": {
+                "firstName": {
                   "example": "any"
                 },
                 "lastName": {
@@ -95,6 +95,9 @@
     },
     "/students/{id}": {
       "get": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -117,6 +120,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "parameters": [
           {
@@ -131,7 +137,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstNam": {
+                "firstName": {
                   "example": "any"
                 },
                 "lastName": {
@@ -181,6 +187,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Students"
+        ],
         "description": "",
         "parameters": [
           {
@@ -205,6 +214,9 @@
     },
     "/courses/": {
       "get": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -213,13 +225,13 @@
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
           }
         }
       },
       "post": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -271,6 +283,9 @@
     },
     "/courses/{id}": {
       "get": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "produces": [
           "application/json"
@@ -293,6 +308,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "parameters": [
           {
@@ -348,6 +366,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Courses"
+        ],
         "description": "",
         "parameters": [
           {

@@ -32,7 +32,8 @@
     "mongoose": "^6.11.0",
     "node": "^20.1.0",
     "swagger": "^0.0.1",
-    "swagger-ui-express": "^4.6.3"
+    "swagger-ui-express": "^4.6.3",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "eslint": "^8.40.0",
