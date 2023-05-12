@@ -22,8 +22,7 @@ const saveCourse = (req, res, next) => {
         } else {
             next();
         }
-    });
-    // .catch(err => console.log(err))
+    }).catch(err => console.log(err))
 };
 
 const saveStudent = (req, res, next) => {
@@ -51,8 +50,7 @@ const saveStudent = (req, res, next) => {
         } else {
             next();
         }
-    });
-    // .catch(err => console.log(err))
+    }).catch(err => console.log(err))
 };
 
 
