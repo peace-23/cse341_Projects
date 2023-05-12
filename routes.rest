@@ -30,7 +30,7 @@ Content-Type: application/json
 {
   "firstName": "Emily",
   "lastName": "Nortion",
-  "sex": "F",
+  "sex": "M",
   "dob": "2089-03-15",
   "email": "emilygarcia@student.com",
   "classification": "Junior",
