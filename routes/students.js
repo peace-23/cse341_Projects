@@ -1,20 +1,19 @@
-// const express = require('express');
-// const routes = express.Router();
+const express = require('express');
+const router = express.Router();
 
-// const employeesController = require('../controllers/employees');
-// const validation = require('../middleware/validate');
-// const { isAuthenticated } = require("../middleware/authenticate");
+const studentsController = require('../controllers/students');
+const validation = require('../middleware/validate');
+const { isAuthenticated } = require("../middleware/authenticate");
 
 
 
-// routes.get('/', employeesController.getAll);
+router.get('/', studentsController.getAll);
+router.get('/:id', studentsController.getSingle);
 
-// routes.get('/:id', employeesController.getSingle);
+router.post('/', isAuthenticated, validation.saveStudent, studentsController.createStudent);
+router.put('/:id', isAuthenticated, validation.saveStudent, studentsController.updateStudent);
+router.delete('/:id', isAuthenticated, studentsController.deleteStudent);
 
-// routes.post('/', isAuthenticated, validation.saveEmployee, employeesController.createEmployee);
+module.exports = router;
 
-// routes.put('/:id', isAuthenticated, validation.saveEmployee, employeesController.updateEmployee);
 
-// routes.delete('/:id', isAuthenticated, employeesController.deleteEmployee);
-
-// module.exports = routes;
