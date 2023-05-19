@@ -1,15 +1,19 @@
-const routes = require('express').Router();
-const temple = require('./temple');
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
 
-routes.use('/temples', temple);
-routes.use(
-  '/',
-  (docData = (req, res) => {
-    let docData = {
-      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
-    };
-    res.send(docData);
-  })
-);
+router.use('/', require('./swagger'));
 
-module.exports = routes;
+router.use('/employees', require('./employees'));
+router.use('/deli', require('./deli'));
+
+router.get('/login', passport.authenticate('github'), (req, res) => { });
+
+router.get('/logout', function (req, res, next) {
+    req.logout(function (err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+    });
+});
+
+module.exports = router;

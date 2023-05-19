@@ -1,0 +1,60 @@
+//LOCALHOST Students Collection
+
+
+### Get Studnet list
+GET http://localhost:8080/students HTTP/1.1
+
+### Get Studnet by Id
+GET http://localhost:8080/students/# HTTP/1.1
+
+### Create Studnet
+POST http://localhost:8080/students HTTP/1.1
+Content-Type: application/json
+
+{
+
+}
+
+### Update a Studnet
+PUT http://localhost:8080/students/# HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+
+### Delete Studnet
+DELETE http://localhost:8080/students/# HTTP/1.1
+
+
+
+
+
+//LOCALHOST Courses Collection
+
+### Get Courses list
+GET http://localhost:8080/courses HTTP/1.1
+
+### Get Courses by Id
+GET http://localhost:8080/courses/# HTTP/1.1
+
+### Create Courses
+POST http://localhost:8080/courses HTTP/1.1
+Content-Type: application/json
+
+{
+
+}
+
+### Update a Courses
+PUT http://localhost:8080/courses/# HTTP/1.1
+content-type: application/json
+
+{
+
+}
+
+### Delete Courses
+DELETE http://localhost:8080/courses/# HTTP/1.1
+
