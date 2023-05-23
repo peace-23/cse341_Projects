@@ -5,6 +5,8 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     //#swagger.tags=['Students']
+    // #swagger.summary=Get full student list
+    // #swagger.description=To get all students, Create multiple students
     const result = await mongodb.getDb().db().collection('students').find();
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
@@ -16,6 +18,8 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
     //#swagger.tags=['Students']
+  // #swagger.summary=Get student by Id
+  // #swagger.description=To get a student by Id, Create a student
     if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('A valid student id is required to find a student information')
     }
@@ -30,6 +34,8 @@ const getSingle = async (req, res) => {
 
 const createStudent = async (req, res) => {
     //#swagger.tags=['Students']
+  // #swagger.summary=Create new student
+  // #swagger.description=Adds a new student to the database
     console.log(req.body)
     const student = {
         firstName: req.body.firstName,
@@ -54,6 +60,8 @@ const createStudent = async (req, res) => {
 
 const updateStudent = async (req, res) => {
     //#swagger.tags=['Students']
+  // #swagger.summary=Update student by Id
+  // #swagger.description=To update a student by Id, create a student
     if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('A valid student id is required to update a student information')
     }
@@ -87,6 +95,8 @@ const updateStudent = async (req, res) => {
 
 const deleteStudent = async (req, res) => {
     //#swagger.tags=['Students']
+  // #swagger.summary=Deletes student by Id
+  // #swagger.description=To delete a student by Id, create a student
     if (!ObjectId.isValid(req.params.id)) {
         res.status(400).json('A valid student id is required to delete a student information')
     }
