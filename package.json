@@ -2,10 +2,10 @@
   "name": "temple-api",
   "version": "1.0.0",
   "description": "LDS Temple API for BYU-Idaho WDD230 student projects",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev-start": "nodemon index.js",
+    "start": "node server.js",
+    "dev-start": "nodemon server.js",
     "swagger": "node ./swagger.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
